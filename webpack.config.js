@@ -1,5 +1,6 @@
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ZipPlugin = require('zip-webpack-plugin')
 
 module.exports = {
     entry: './index.js',
@@ -32,6 +33,11 @@ module.exports = {
                 yandex: false,
                 windows: false
             }
+        }),
+        new ZipPlugin({
+            filename: 'favicon.zip',
+            pathPrefix: './dist/',
+            exclude: [/\.js$/, /\.json$/]
         })
     ]
 }
