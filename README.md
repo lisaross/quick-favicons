@@ -67,6 +67,12 @@ Run webpack script
 npm run build
 ```
 
+This will create a ./dist directory including your icons and some supporting files.
+
+It will also generate a favicon.zip file that is an archive of your icons directory + your index.html file, to be used to share with 3rd parties.
+
+![File structure](https://cdn-pro.dprcdn.net/files/acc_582402/O7921R)
+
 ## Maintainers
 
 [@LisaRoss](https://github.com/lisaross).
