@@ -11,7 +11,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin(),
         new FaviconsWebpackPlugin({
-            logo: 'src/favicon.png',
+            logo: './src/favicon.png',
             emitStats: true,
             inject: true,
             prefix: 'icons-[hash]/',
