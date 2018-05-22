@@ -9,7 +9,9 @@ module.exports = {
         filename: 'index_bundle.js'
     },
     plugins: [
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            title: 'Quick Favicons'
+        }),
         new FaviconsWebpackPlugin({
             logo: './src/favicon.png',
             emitStats: true,
