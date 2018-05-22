@@ -1,2 +1,2 @@
 # quick-favicons
-quickly make favicons for projects
+quickly make favicons for projects using favicons-webpack-plugin
