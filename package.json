@@ -1,0 +1,9 @@
+{
+  "name": "quick-favicons",
+  "version": "0.0.1",
+  "description": "quickly make favicons for projects using favicons-webpack-plugin",
+  "main": "index.js",
+  "repository": "git@github.com:lisaross/quick-favicons.git",
+  "author": "Lisa Ross <lisa@thisisbroad.com> (https://www.thisisbroad.com)",
+  "license": "MIT"
+}
