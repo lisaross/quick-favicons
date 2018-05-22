@@ -2,7 +2,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: 'index.js',
+    entry: './index.js',
     mode: 'development',
     output: {
         path: __dirname + '/dist',
@@ -13,9 +13,11 @@ module.exports = {
         new FaviconsWebpackPlugin({
             logo: './src/favicon.png',
             emitStats: true,
+            title: 'Mi Beauti',
+            background: "#000",
             inject: true,
-            prefix: 'icons-[hash]/',
-            statsFilename: 'iconstats-[hash].json',
+            prefix: 'icons/',
+            statsFilename: 'iconstats.json',
             icons: {
                 android: true,
                 appleIcon: true,
